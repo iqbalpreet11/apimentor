@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@font-face {
+    font-family: cocogoose;
+    src: url('./assets/cocogoose.ttf');
+}
+@layer base{
+    hr {
+        @apply my-5
+    }
+
+    h3 {
+        @apply text-2xl font-medium text-slate-800;
+    }
+
+    h4{
+        @apply text-2xl font-medium text-slate-800;
+    }
+    h5{
+        @apply text-xl font-medium text-slate-800;
+    }
+    h6 {
+        @apply text-lg font-medium text-slate-800;
+    }
+    h1{
+        @apply text-6xl font-bold text-slate-800 ;
+    }
+    h2{
+        @apply text-lg font-medium mt-3
+    }
+    
+    tr{
+        @apply bg-white hover:bg-slate-50 ;
+    }
+    th{
+        @apply  text-sm font-medium px-2 py-2 bg-slate-100 border
+    }
+    td{
+        @apply text-sm px-2 py-3 text-slate-700 border
+    }
+    select, input, textarea {
+        @apply  px-2 py-2 border w-48 rounded focus:border-primary outline-none text-sm focus:bg-slate-50 text-slate-500 focus:bg-white
+    }
+
+    label{
+        @apply  text-slate-800 mb-4
+    }
+}
+
+
+@layer components {
+    .sub-text {
+        @apply text-sm text-slate-400
+    }
+
+    .btn {
+        @apply px-5  py-1.5 outline-none duration-150 rounded 
+    }
+
+    .btn-sm{
+        @apply text-sm
+    }
+
+    .btn-primary {
+        @apply bg-indigo-500 text-white hover:bg-indigo-600 shadow-md shadow-indigo-100 hover:shadow-xl
+    }
+
+    .btn-primary-outline{
+        @apply border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white 
+    }
+
+    .btn-primary-link{
+        @apply text-indigo-500 hover:text-indigo-700
+    }
+
+    .btn-secondary {
+        @apply bg-slate-800 text-white hover:bg-slate-900
+    }
+
+    .btn-secondary-outline{
+        @apply border border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white 
+    }
+
+    .btn-secondary-link{
+        @apply text-slate-800 hover:text-slate-700
+    }
+
+    /* navbar */
+
+    .navbar{
+        @apply    flex justify-between px-20  items-center sticky top-0 w-full bg-white border-b shadow-sm 
+    }
+
+    .nav-item{
+        @apply py-4 px-2   border-t-2 border-transparent cursor-pointer text-slate-500 font-medium hover:border-indigo-500
+    }
+    .active-nav-item{
+        @apply py-4 px-2   border-t-2 border-indigo-500 cursor-pointer text-slate-700 font-medium hover:border-indigo-500
+    }
+
+    .swiperSlide{
+        @apply   flex flex-wrap justify-center content-center items-center;
+     
+    }
+    .indexCompanyLogo{
+        @apply h-12 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 duration-150
+    }
+    /* texts */
+
+    .text-muted{
+        @apply text-sm text-black/40
+    }
+
+    /* dashboard */
+
+    .sidebar-item{
+        @apply text-white/80 hover:text-white flex items-center cursor-pointer  pl-3 pr-3 py-3  hover:bg-white/10 rounded-lg 
+    }
+
+    .sidebar-active-item {
+        @apply text-white pl-3 pr-3 py-3 shadow-xl flex items-center   bg-white/20 rounded-lg;
+    }
+
+    .sidebar-subitem{
+        @apply pl-4 pr-3 py-2 text-white/80 hover:bg-white/10 rounded-lg hover:text-white cursor-pointer;
+    }
+
+    .sidebar-item-icon{
+        @apply h-5 w-5 mr-3;
+    }
+
+
+    /* list */
+
+    .list {
+        @apply  px-4 py-3 text-black/80 border-b hover:bg-slate-100 cursor-pointer  flex items-center font-medium border-r-4 border-r-transparent;
+    }
+    
+    .list-image {
+        @apply h-8 w-8 bg-white rounded-full overflow-hidden border mr-3;
+    }
+
+    .active-list {
+        @apply  px-4 py-3 text-black/80 border-b  cursor-pointer   flex items-center font-medium border-r-4 border-r-black bg-slate-50;
+    }
+
+
+
+    .fullscreen{
+        @apply absolute top-0 left-0 bg-white;
+    }
+
+
+    /* bedges */
+
+    .bedge {
+        @apply text-xs px-5 py-1 rounded-full bg-slate-100 text-center text-slate-700 w-min
+    }
+
+    .bedge-green {
+        @apply bg-green-100 border border-green-200 text-green-500
+    }
+
+
+    /* inputs */
+
+   .input-wrapper{
+    @apply mt-5
+   }
+
+   .bg-gradient{
+    @apply bg-gradient-to-b from-white to-slate-100
+   }
+    .header{
+        @apply text-4xl font-bold text-slate-800 text-center
+    }
+
+    .subheader {
+        @apply text-center mt-2 text-slate-500
+    }
+
+
+    /* cards */
+
+    .card-white{
+        @apply bg-white hover:shadow-lg duration-150 rounded-lg border py-5 px-8 relative 
+    }
+
+    .modules-description > p {
+        @apply text-sm text-slate-600 mt-1
+    }
+    
+
+  } 
